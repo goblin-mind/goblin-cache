@@ -1,6 +1,6 @@
 {
   "name": "goblin-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a three-layer cache management system in TypeScript. It will include an in-memory cache, a database cache, and a source layer. The system will also include batching and timeouts for the DB and source layers.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
