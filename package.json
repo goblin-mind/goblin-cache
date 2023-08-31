@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/goblin-mind/goblin-cache#readme",
   "dependencies": {
-    "lru-cache": "^10.0.1"
+    "lru-cache": "^10.0.1",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@types/lru-cache": "^7.10.10"
