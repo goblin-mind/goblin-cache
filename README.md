@@ -14,36 +14,36 @@ GoblinCache is a multi-level caching library designed to efficiently manage data
 
 ## Installation
 Install via npm:
-\```bash
+```bash
 npm install goblin-cache
-\```
+```
 
 ## Usage
 
 ### Initialization
 Import the package and initialize with options:
-\```typescript
+```typescript
 import { GoblinCache, GoblinCacheOptions } from 'goblin-cache';
 
 const options: GoblinCacheOptions = {
   // ...
 };
 const cacheManager = GoblinCache.getInstance(options);
-\```
+```
 
 ### Get and Set Data
 Get and set data using the `get` and `set` methods.
-\```typescript
+```typescript
 cacheManager.get("some-key").then((data) => {
   // Do something
 });
 
 cacheManager.set("some-key", someValue);
-\```
+```
 
 ### Configuration Options
 Create a `GoblinCacheOptions` object to configure GoblinCache:
-\```typescript
+```typescript
 const options: GoblinCacheOptions = {
   memLOptions: { batchSize: 1, maxBatches: 50, timeoutMs: 0 },
   dbLOptions: { batchSize: 50, maxBatches: 5, timeoutMs: 200 },
@@ -52,7 +52,7 @@ const options: GoblinCacheOptions = {
   spawn: () => new Worker(),
   memoryLimit: 500,
 };
-\```
+```
 
 ### Web Worker
 Provide your custom Web Worker through the `spawn` option for the custom worker layer.
