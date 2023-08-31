@@ -1,0 +1,30 @@
+{
+  "name": "goblin-cache",
+  "version": "1.0.0",
+  "description": "a three-layer cache management system in TypeScript. It will include an in-memory cache, a database cache, and a source layer. The system will also include batching and timeouts for the DB and source layers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/goblin-mind/goblin-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "lazy"
+  ],
+  "author": "cherrycodes69",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goblin-mind/goblin-cache/issues"
+  },
+  "homepage": "https://github.com/goblin-mind/goblin-cache#readme",
+  "dependencies": {
+    "lru-cache": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/lru-cache": "^7.10.10"
+  }
+}
