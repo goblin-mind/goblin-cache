@@ -1,7 +1,7 @@
 {
   "name": "goblin-cache",
   "version": "1.0.1",
-  "description": "a three-layer cache management system in TypeScript. It will include an in-memory cache, a database cache, and a source layer. The system will also include batching and timeouts for the DB and source layers.",
+  "description": "A multi-level front-end caching library designed to efficiently manage data across different storage layers. It incorporates in-memory storage, IndexedDB, and Web Workers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -26,6 +26,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@types/lru-cache": "^7.10.10"
+    "@types/lru-cache": "^7.10.10",
+    "@types/node": "^20.10.0"
   }
 }

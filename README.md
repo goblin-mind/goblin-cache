@@ -1,8 +1,9 @@
 # GoblinCache
 
 ## Overview
-GoblinCache is a multi-level caching library designed to efficiently manage data across different storage layers. It incorporates in-memory storage, IndexedDB, and Web Workers for optimized performance. The package is highly configurable and suited for applications where data accessibility, performance, and efficiency are crucial.
+GoblinCache is a multi-level front-end caching library designed to efficiently manage data across different storage layers. It incorporates in-memory storage, IndexedDB, and Web Workers for optimized performance. The package is highly configurable and suited for applications where data accessibility, performance, and efficiency are crucial.
 
+The idea is to eventually extract a generic resource retrieval and caching promise escalation chain
 ## Features
 - **Multi-Level Caching**: Three levels of caching: In-Memory, IndexedDB, and custom workers.
 - **Highly Configurable**: Batch sizes, maximum number of batches, and timeouts can be adjusted for each layer.
