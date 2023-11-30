@@ -1,6 +1,6 @@
 {
   "name": "goblin-cache",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A multi-level front-end caching library designed to efficiently manage data across different storage layers. It incorporates in-memory storage, IndexedDB, and Web Workers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
