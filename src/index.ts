@@ -45,6 +45,7 @@ export class GoblinCache {
         _db.createObjectStore(options.dbOptions.objectStore);
       },
     }).then((_db) => {
+      console.log("idb cacheready");
       db = _db;
     });
 
@@ -59,7 +60,7 @@ export class GoblinCache {
       const tx = db.transaction(options.dbOptions.objectStore, "readwrite");
       return Promise.all(
         products
-          .map((products) => tx.store.put(products.source, products.resource))
+          .map((products) => tx.store.put(products.resource, products.source))
           .concat([tx.done])
       );
     };
